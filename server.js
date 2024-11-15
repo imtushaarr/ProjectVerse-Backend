@@ -2,9 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
-const connectDB = require('../backend/config/database'); // Correct path to your DB connection
-const ProjectRoutes = require('./routes/projectRoutes'); // Ensure correct path to your routes file
-const paymentRoutes = require('./routes/paymentRoutes');
+const connectDB = require('./config/database.js'); // Correct path to your DB connection
+const ProjectRoutes = require('./routes/projectRoutes.js'); // Ensure correct path to your routes file
+const paymentRoutes = require('./routes/paymentRoutes.js');
 
 const app = express();
 const port = 5001;
