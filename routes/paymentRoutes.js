@@ -4,8 +4,8 @@ const router = express.Router();
 const Project = require('../models/projectModel'); // Import your project model
 
 const razorpay = new Razorpay({
-  key_id: 'rzp_live_afo9xw5T1MT8gE',
-  key_secret: 'sXh6989pHPrkTZwQUYz25N61',
+  key_id: 'ENTER_YOUR_KEY_ID',
+  key_secret: 'ENTER_YOUR_KEY_SECRET',
 });
 
 router.post('/:projectId', async (req, res) => {
